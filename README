@@ -1,6 +1,6 @@
 TestYii by Evan Frohlich, Matteo Rinaudo and Eric McGill is a light version of the ror original.
 Just follow the directions and when you make changes to your project
-test will run auto-magicly.
+test will run auto-magically.
 
 Place TestYii in your project direcotry one level above 'webapp/'
 
