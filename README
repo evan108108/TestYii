@@ -1,6 +1,6 @@
 TestYii by Evan Frohlich, Matteo Rinaudo and Eric McGill is a light version of the ror original.
-Just follow the directions and when you make changes to your project
-test will run auto-magically.
+Just follow the directions and when you make changes to your project and
+your tests will run auto-magically.
 
 Place TestYii in your project direcotry one level above 'webapp/'
 
@@ -13,7 +13,7 @@ Optional Args
   b) functional
        "./testyii.sh functional"
   c) both
-       "./testyii.sh functional"
+       "./testyii.sh both"
   d) null {the default is unit}
       "./testyii.sh"
 
