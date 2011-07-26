@@ -15,9 +15,15 @@ case "$1" in
   ;;
 esac
 
+if [ "$2" ]; then
+  webapp="$2"
+else
+  webapp="$2"
+fi
+
 function runTests {
   touch ./TestYii.tmp
-  cd ../webapp/protected/tests
+  cd ../$webapp/protected/tests
   phpunit ./$testType | tee ../../../TestYii/lastTestOutPut.log
   result=`tail -n 1 ../../../TestYii/lastTestOutPut.log`
 
@@ -44,7 +50,7 @@ fi
 
 while [ "1" == "1" ]
 do
-  if [ `find ../webapp -type f -newer TestYii.tmp | wc -l` -gt 0 ]; then
+  if [ `find ../$webapp -type f -newer TestYii.tmp | wc -l` -gt 0 ]; then
     runTests
   fi
   sleep 5
